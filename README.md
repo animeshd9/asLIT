@@ -26,12 +26,6 @@ Go to the project directory
   cd asLIT
 ```
 
-Install dependencies
-
-```bash
-  npm install
-```
-
 Install the required dependencies:
 
 ```bash
@@ -41,7 +35,7 @@ Install the required dependencies:
 Make the script executable
 
 ```bash
-  chmod +x my-script.js
+  chmod +x ./bin/index.js
 
 ```
 ## Usage/Examples
