@@ -41,7 +41,7 @@ Make the script executable
 Intall the script globally
 
 ```bash
-npm i -g /home/animesh/asLIT
+sudo npm i -g /home/<user-name>/asLIT
 ```
 ## Usage/Examples
 Add a Server Configuration
