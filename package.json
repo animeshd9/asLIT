@@ -1,0 +1,30 @@
+{
+  "name": "aslit",
+  "version": "1.0.0",
+  "description": "A CLI tool to connect to your servers via SSH",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "asLIT": "./bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/animeshd9/asLIT.git"
+  },
+  "author": "Animesh Das, Rakesh Modak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/animeshd9/asLIT/issues"
+  },
+  "homepage": "https://github.com/animeshd9/asLIT#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cli-table": "^0.3.11",
+    "commander": "^11.0.0",
+    "inquirer": "^8.2.5",
+    "node-pty": "^1.0.0",
+    "ssh2": "^1.14.0"
+  }
+}
