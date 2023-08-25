@@ -38,6 +38,11 @@ Make the script executable
   chmod +x ./bin/index.js
 
 ```
+Intall the script globally
+
+```bash
+npm i -g /home/animesh/asLIT
+```
 ## Usage/Examples
 Add a Server Configuration
 
