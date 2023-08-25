@@ -17,13 +17,13 @@ A CLI tool to connect to your servers via SSH.
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://link-to-project](https://github.com/animeshd9/asLIT
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd asLIT
 ```
 
 Install dependencies
