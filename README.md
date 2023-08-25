@@ -10,6 +10,7 @@ A CLI tool to connect to your servers via SSH.
 - Add new server configurations interactively.
 - List all saved server configurations.
 - Connect to servers using SSH.
+- As of now it only works with your public key
 
 
 ## Run Locally
@@ -41,24 +42,24 @@ Make the script executable
 Intall the script globally
 
 ```bash
-sudo npm i -g /home/<user-name>/asLIT
+   sudo npm i -g /home/<user-name>/asLIT
 ```
 ## Usage/Examples
 Add a Server Configuration
 
 ```bash
- asLIT add
+ aslit add
 ```
 
 List Server Configurations
 
 ```bash
- asLIT list
+ aslit list
 ```
 Connect to a Server
 
 ```bash
- asLIT connect <server-name>
+ aslit connect <server-name>
 ```
 ## Configuration
 The server configurations are stored in a config.json file. The script uses encryption for sensitive information.
