@@ -14,7 +14,6 @@ function loadConfig() {
         const data = fs.readFileSync(configFilePath, 'utf8');
         return JSON.parse(data);
     } catch (err) {
-        console.error('Error loading config:', err);
         return {};
     }
 }
