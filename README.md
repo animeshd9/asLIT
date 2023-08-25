@@ -17,7 +17,7 @@ A CLI tool to connect to your servers via SSH.
 Clone the project
 
 ```bash
-  git clone https://link-to-project](https://github.com/animeshd9/asLIT
+  git clone https://github.com/animeshd9/asLIT
 ```
 
 Go to the project directory
@@ -31,15 +31,6 @@ Install dependencies
 ```bash
   npm install
 ```
-
-Start the server
-
-```bash
-  npm run start
-```
-
-
-## Installation
 
 Install the required dependencies:
 
