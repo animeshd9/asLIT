@@ -45,7 +45,7 @@ program
     .command('add')
     .description('Add a new server configuration')
     .action(async () => {
-        const config  = { };
+        const config  = loadConfig();
         const questions = [
             { type: 'input', name: 'name', message: 'Server name:' },
             { type: 'input', name: 'host', message: 'Server host:' },
