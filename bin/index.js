@@ -140,9 +140,7 @@ program
       let sshArgs = [`${server.username}@${server.host}`];
 
       if (server.keyPath) {
-        sshArgs.push("-i", "F:\\BT\\asLIT\\bin\\pem\\pem_1694071297568.pem"); // Use -i option to specify the key file path
-        console.log(server.keyPath)
-        console.log(sshArgs)
+        sshArgs.push("-i", server.keyPath); // Use -i option to specify the key file path
       }
 
       const sshProcess = spawn("ssh", sshArgs, {
