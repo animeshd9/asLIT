@@ -57,11 +57,32 @@ program
         message: "Password (optional):",
         validate: (input) => input.length >= 0 || true,
       },
+      {
+        type: "input",
+        name: "keyPath",
+        message: "Path to PEM file (optional):",
+      },
     ];
     const answers = await inquirer.prompt(questions);
     if (answers.password === "") {
       delete answers.password;
     }
+
+    if (answers.keyPath) {
+      // Read the content of the uploaded file
+      try {
+        const pemContent = fs.readFileSync(answers.keyPath, "utf8");
+        // Generate a unique filename and save the PEM file to a specified directory
+        const pemFileName = `pem_${Date.now()}.pem`;
+        const pemFilePath = path.join(__dirname, "pem", pemFileName);
+        fs.writeFileSync(pemFilePath, pemContent);
+        answers.keyPath = pemFilePath;
+      } catch (error) {
+        console.error("Error reading or saving the PEM file:", error);
+        delete answers.keyPath;
+      }
+    }
+  
     const findServerName = config.find((x) => x.name === answers.name);
     if (findServerName) {
       program.error("Server Name already exist! X");
@@ -116,7 +137,15 @@ program
     if (server) {
       console.log(`Connecting to server: ${serverName}`);
 
-      const sshProcess = spawn("ssh", [`${server.username}@${server.host}`], {
+      let sshArgs = [`${server.username}@${server.host}`];
+
+      if (server.keyPath) {
+        sshArgs.push("-i", "F:\\BT\\asLIT\\bin\\pem\\pem_1694071297568.pem"); // Use -i option to specify the key file path
+        console.log(server.keyPath)
+        console.log(sshArgs)
+      }
+
+      const sshProcess = spawn("ssh", sshArgs, {
         stdio: "inherit", // Inherit the standard input/output of the current process
       });
 
