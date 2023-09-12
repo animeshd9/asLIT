@@ -31,6 +31,7 @@ Install dependencies
 ```bash
   npm install
 ```
+<<<<<<< Updated upstream
 
 Start the server
 
@@ -52,6 +53,13 @@ Make the script executable
 ```bash
   chmod +x my-script.js
 
+=======
+  
+Intall the script globally
+
+```bash
+   sudo npm i -g 
+>>>>>>> Stashed changes
 ```
 ## Usage/Examples
 Add a Server Configuration
@@ -68,10 +76,19 @@ List Server Configurations
 Connect to a Server
 
 ```bash
+<<<<<<< Updated upstream
  asLIT connect <server-name>
+=======
+ aslit connect <server-name> or  <id>
+```
+Delete server
+
+```bash
+ aslit delete <id>
+>>>>>>> Stashed changes
 ```
 ## Configuration
-The server configurations are stored in a config.json file. The script uses encryption for sensitive information.
+The server configurations are stored in a config.json file.
 ## Contributing
 
 Contributions are always welcome! If you encounter any issues or have suggestions for improvements, please create an issue or submit a pull request
