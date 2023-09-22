@@ -23,8 +23,6 @@
     "chalk": "^4.1.2",
     "cli-table": "^0.3.11",
     "commander": "^11.0.0",
-    "inquirer": "^8.2.5",
-    "node-pty": "^1.0.0",
-    "ssh2": "^1.14.0"
+    "inquirer": "^8.2.5"
   }
 }
