@@ -5,7 +5,7 @@ A CLI tool to connect to your servers via SSH.
 
 ## Demo
 
-![](https://github.com/animeshd9/aslit-gif/blob/main/aslit.gif)
+![](https://github.com/animeshd9/aslit-gif/blob/main/aslit-1.gif)
 
 
 ## Features
