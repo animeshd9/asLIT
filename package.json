@@ -1,6 +1,6 @@
 {
   "name": "aslit",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A CLI tool to connect to your servers via SSH",
   "main": "index.js",
   "scripts": {
@@ -20,9 +20,21 @@
   },
   "homepage": "https://github.com/animeshd9/asLIT#readme",
   "dependencies": {
+    "@changesets/cli": "^2.26.2",
     "chalk": "^4.1.2",
     "cli-table": "^0.3.11",
     "commander": "^11.0.0",
     "inquirer": "^8.2.5"
-  }
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "aslit",
+    "asbru",
+    "ssh",
+    "ssh-client",
+    "connection manager",
+    "cli"
+  ]
 }

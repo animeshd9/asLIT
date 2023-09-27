@@ -3,6 +3,9 @@
 
 A CLI tool to connect to your servers via SSH.
 
+## Demo
+
+![](https://github.com/animeshd9/aslit-gif/blob/main/aslit.gif)
 
 
 ## Features
